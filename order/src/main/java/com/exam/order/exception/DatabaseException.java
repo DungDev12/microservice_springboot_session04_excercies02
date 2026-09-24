@@ -1,0 +1,9 @@
+package com.exam.order.exception;
+
+import org.springframework.dao.DataAccessException;
+
+public class DatabaseException extends RuntimeException {
+    public DatabaseException(String message, DataAccessException ex) {
+        super(message);
+    }
+}

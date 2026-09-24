@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: product
+    jpa:
+        hibernate:
+            ddl-auto: update
+    datasource:
+        url: jdbc:postgresql://localhost:5432/microservices_ss03_ex01_product
+        username: postgres
+        password: TuanDung@127
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+    instance:
+        prefer-ip-address: true
+server:
+    port: 8081
